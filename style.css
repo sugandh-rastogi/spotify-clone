@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu',sans-serif;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 55px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+
+}
+.brand img{
+    width: 30px;
+    padding :0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.container{
+    min-height: 62vh;
+    font-size: .8rem;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(ycMNaz.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.bottom{
+   
+    position: sticky;
+    bottom: 0;
+    height: 90px;
+  
+    background-color: black;
+    color: white;
+    justify-self: flex-end;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#masterPlay{
+    padding: 0 10px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    
+}
+
+.songItemContainer{
+    margin-top: 54px;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+ 
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 34px;
+
+}
+
+.songItem img{
+    width: 37px;
+    margin: 0 23px;
+    border-radius: 34px;
+
+}
+
+.songlistplay{
+    display: flex;
+    align-items: center;
+    margin: 0 23px;
+   
+}
+
+.timestamp{
+     margin: 0 10px;
+     
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 9vw;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'Verala Round',sans-serif;
+
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.songItemPlay{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    
+   
+    .icons{
+       margin-top: 0px;
+    }
+    .songInfo{
+        margin-top: 80px;
+        margin-left: 60px;
+        
+    }
+    #gif{
+        visibility: hidden;
+    }
+
+}
+
